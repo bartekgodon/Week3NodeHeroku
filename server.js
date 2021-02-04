@@ -30,6 +30,9 @@ adminRouter.param('name', function(req, res, next, name) {
     // go to the next thing
     next();
 });
+
+adminRouter.get('/users/:name', function(req, res) {
+    res.send('hello ' + req.params.name + '!'); }); 
    
 // admin main page. the dashboard (http://localhost:PORT/admin)
 adminRouter.get('/', function(req, res) {
