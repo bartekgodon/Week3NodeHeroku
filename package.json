@@ -1,0 +1,22 @@
+{
+  "name": "week3nodeheroku",
+  "version": "1.0.0",
+  "description": "This is a Week 3 Lab",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartekgodon/Week3NodeHeroku.git"
+  },
+  "keywords": [
+    "lab"
+  ],
+  "author": "Bartek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartekgodon/Week3NodeHeroku/issues"
+  },
+  "homepage": "https://github.com/bartekgodon/Week3NodeHeroku#readme"
+}
