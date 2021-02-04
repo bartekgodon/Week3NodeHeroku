@@ -18,8 +18,19 @@ adminRouter.use(function(req, res, next) {
     console.log( "Here is my log - "+ req.method + req.url);
     // continue doing what we were doing and go to the route
     next(); 
-});   
+});
 
+// route middleware to validate :name
+adminRouter.param('name', function(req, res, next, name) {
+    // do validation on name here
+    // log something so we know its working
+    console.log('doing name validations on ' + name);
+    // once validation is done save the new item in the req
+    req.name = name;
+    // go to the next thing
+    next();
+});
+   
 // admin main page. the dashboard (http://localhost:PORT/admin)
 adminRouter.get('/', function(req, res) {
  res.send('I am the dashboard!'); 
